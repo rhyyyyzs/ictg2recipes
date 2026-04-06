@@ -1,0 +1,133 @@
+body {
+  background: linear-gradient(135deg, #ffd6e8, #c8f7ff, #e6d4ff);
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+}
+
+.categories {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 50px;
+}
+.recipe-item {
+  display: flex;
+  align-items: center;   
+  justify-content: space-between; 
+  margin-bottom: 10px;
+}
+
+.featured-box ul {
+  width: 300px;        
+  margin: 0 auto;      
+  text-align: left;    
+  padding-left: 20px;
+}
+.featured-box ol {
+  width: 300px;       
+  margin: 0 auto;     
+  text-align: left;   
+  padding-left: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(135deg, #ffd6e8, #c8f7ff, #e6d4ff);
+  text-align: center;
+}
+
+h1 {
+  color: #ff85c1;
+  text-shadow: 2px 2px #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.featured {
+  padding: 20px;
+}
+
+.featured-box {
+  border: 3px solid rgb(0, 0, 0);
+  margin: 20px auto;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.featured-box img {
+  width: 100%;        /* fit image perfectlyyahah */
+  max-width: 400px;   /* optional lang */
+  height: auto;       /* proportions */
+  display: block;
+  margin: 10px auto;  /* basta center ng image */
+  border-radius: 10px; /* corners kung gusto mong round or  hende */
+}
+.logout {
+    background: rgb(248, 190, 248);
+    color: #000000;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+  border-top: 1px solid black; /* same as your original */
+  padding: 20px;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive; /* matches your original navbar font */
+  color: black; /* black text like your first HTML */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* left and right alignment */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-content div h3 {
+  margin-bottom: 10px;
+}
+
+.footer-content div p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content div {
+    margin-bottom: 15px;
+  }
+}

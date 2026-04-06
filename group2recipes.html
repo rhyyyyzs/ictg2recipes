@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Filipino Recipes</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    nav a.active {
+      border-bottom: 2px solid orange;
+    }
+
+    .category-box:target {
+      outline: 3px solid orange;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">
+    <img src="logo202.jpg.jpg" alt="Logo">
+  </div>
+
+  <nav>
+    <a href="#" onclick="refreshPage()">Home</a>
+    <a href="#recipes">Recipes</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="featured">
+  <div class="featured-box">
+    <h1>Tasteful Bites</h1>
+    <p>A website full of yummy Filipino dishes and easy procedures to prepare them for you to try.</p>
+  </div>
+</section>
+
+<!-- dito is featurrred na ulam -->
+<section class="featured">
+  <h2>FEATURED RECIPE</h2>
+
+  <div class="featured-box rainbow">
+    <h1>ADOBO</h1>
+    <div class="img featured-img">
+      <img src="adobo.jpg" alt="Adobo">
+    </div>
+    <p>>Adobo is a popular Filipino dish made with meat
+         (usually chicken or pork) marinated in vinegar,
+          soy sauce, garlic, and spices, then simmered
+          until tender. It's a flavorful and savory dish
+          that is often served with rice.</p> 
+    <button onclick="goToAdobo()">View Recipe</button>
+  </div>
+</section>
+
+<section class="latest" id="recipes">
+  <h2>Latest Recipes</h2>
+
+  <div class="cards">
+    
+    <div class="card">
+      <div class="img"><img src="sisig.jpg"></div>
+      <h3>Bicol Express</h3>
+      <button onclick="goToBicolExpress()">View Recipe</button>
+    </div>
+
+    <div class="card">
+      <div class="img"><img src="panlkasangpinoy.jpg"></div>
+      <h3>Kare-Kare</h3>
+      <button onclick="goTokarekare()">View Recipe</button>
+    </div>
+
+    <div class="card">
+      <div class="img"><img src="ewan.jpg"></div>
+      <h3>Chicken Tinola</h3>
+      <button onclick="goChickenTinola()">View Recipe</button>
+    </div>
+
+    <div class="card">
+      <div class="img"><img src="may talong.jpg"></div>
+      <h3>Pinakbet</h3>
+      <button onclick="goToPinakbet()">View Recipe</button>
+    </div>
+
+    <div class="card">
+      <div class="img"><img src="sisig-recipe.jpg"></div>
+      <h3>Sisig</h3>
+      <button onclick="goToSisig()">View Recipe</button>
+    </div>
+
+    <div class="card">
+      <div class="img"><img src="ginataangbangus.jpg"></div>
+      <h3>Ginataang Bangus</h3>
+      <button onclick="goToGinataangBangus()">View Recipe</button>
+    </div>
+
+    <div class="card">
+      <div class="img"><img src="isda w egg.jpg"></div>
+      <h3>Sarciadong Isda</h3>
+      <button onclick="goToSarciadongIsda()">View Recipe</button>
+    </div>
+
+    <div class="card">
+      <div class="img"><img src="bulalo.jpg"></div>
+      <h3>Bulalo</h3>
+      <button onclick="goToBulalo()">View Recipe</button>
+    </div>
+
+    <div class="card">
+      <div class="img"><img src="cihk.jpg"></div>
+      <h3>Garlic Pepper Beef</h3>
+      <button onclick="goToGarlicPepperBeef()">View Recipe</button>
+    </div>
+
+    <div class="card">
+      <div class="img"><img src="paksiw.jpg"></div>
+      <h3>Paksiw</h3>
+      <button onclick="goToPaksiw()">View Recipe</button>
+    </div>
+
+    <div class="card">
+      <div class="img"><img src="imnotsure.jpg"></div>
+      <h3>Chicken Afritada</h3>
+      <button onclick="goToChickenAfritada()">View Recipe</button>
+    </div>
+
+    <div class="card">
+      <div class="img"><img src="Menudo.jpg"></div>
+      <h3>Menudo</h3>
+      <button onclick="goToMenudo()">View Recipe</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+
+    <div id="about">
+      <h3>About Us</h3>
+      <p>We are passionate about Filipino cuisine<br>
+           and love sharing traditional and modern<br>
+            recipes with everyone.</p>
+    </div>
+
+    <div id="contact">
+      <h3>Contact</h3>
+      <p>tastefullbitesorg@gmail.com</p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- trykolangnapanoodkosayoutube -->
+<script>
+function refreshPage() {
+  location.reload();
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+
+  const sections = document.querySelectorAll("section, footer div");
+  const navLinks = document.querySelectorAll("nav a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(a => {
+      a.classList.remove("active");
+      if (a.getAttribute("href") === "#" + current) {
+        a.classList.add("active");
+      }
+    });
+  });
+
+});
+</script>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.featured {
+  text-align: center;
+  padding: 20px;
+}
+
+/* box kung gano kaliit nasa baba ng featured recipe hehehehe*/
+.featured-box {
+  border: 3px solid rgb(0, 0, 0);
+  margin: 20px auto;
+  width: 80%;
+  padding: 60px;
+}
+
+.featured-box.rainbow {
+  border: 4px solid;
+  border-image: linear-gradient(90deg,
+    red, orange, yellow, green, blue, indigo, violet) 1;
+}
+
+.latest {
+  padding: 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 10px; 
+  padding: 10px;
+}
+.card {
+  border: 2px solid rgb(2, 1, 1);
+  padding: 15px;
+  width: 200px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto; 
+}
+.img {
+  height: 100px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.categories {
+  text-align: center;
+  padding: 20px;
+}
+
+.category-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.category-box div {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+footer {
+  border-top: 1px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  background: linear-gradient(135deg, #ffd6e8, #c8f7ff, #e6d4ff);
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+}
+
+h1 {
+  color: #ff85c1;
+  text-shadow: 2px 2px #fff;
+}
+
+button {
+  background-color: #ffb6d9;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.cards {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 30px !important;
+}
+
+.img {
+  width: 100% !important;
+  height: 150px !important; 
+  overflow: hidden !important;
+  border-radius: 10px !important; 
+  border: 3px solid black !important;
+  margin-bottom: 10px !important;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 20px 0;
+  background: transparent; 
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer nav a {
+  color: #ff85c1; 
+  text-decoration: none;
+  font-family: 'Comic Sans MS', cursive;
+  font-weight: 600;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+  color: #ffa3c9; 
+  text-decoration: underline;
+}
+
+.featured-img {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.featured-img img {
+  width: 100% !important;
+  height: auto !important; 
+  object-fit: contain !important;
+  display: block;
+}
+.featured-img {
+  height: auto !important; 
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.featured-img img {
+  width: 100% !important;
+  height: auto !important; 
+  object-fit: contain !important;
+}
+
